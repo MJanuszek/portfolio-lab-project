@@ -3,7 +3,7 @@ import React from "react";
 function Navigation() {
   return (
     <>
-      <div className="nav">
+      <nav className="nav">
         <ul>
           <li>Start</li>
           <li>O co chodzi?</li>
@@ -11,7 +11,7 @@ function Navigation() {
           <li>Fundacja i organizacje</li>
           <li>Kontakt</li>
         </ul>
-      </div>
+      </nav>
     </>
   );
 }
