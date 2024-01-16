@@ -3,7 +3,7 @@ import "../styles/StepsInfo.scss";
 function StepsInfo() {
   return (
     <>
-      <div className="steps-info">
+      <div className="steps-info" id="steps-info">
         <h1>Wystarczą 4 proste kroki</h1>
         <div className="decoration">-----dekoracja tu----</div>
         <div className="steps">

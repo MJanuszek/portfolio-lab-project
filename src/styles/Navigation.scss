@@ -1,0 +1,15 @@
+@import "fonts";
+@import "colors";
+
+.nav {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+.nav-link {
+  font-size: 20px;
+  padding: 10px;
+  font-family: $font-open-sans;
+  &:hover {
+    border: 1px solid black;
+  }
+}

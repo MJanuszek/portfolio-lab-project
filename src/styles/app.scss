@@ -1,8 +1,14 @@
 @import "fonts";
+@import "colors";
 
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: $font-open-sans;
-  background-color: #c9bfbf;
+  background-color: $background-white;
+  // max-width: 80vw;
+  // margin: 0 auto;
 }
 
 .btn {

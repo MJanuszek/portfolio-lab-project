@@ -4,7 +4,7 @@ import "../styles/Intro.scss";
 function Intro() {
   return (
     <>
-      <div className="statistics">
+      <div className="statistics" id="statistics">
         <div className="statistic-element">
           <h1>5</h1>
           <h3>title sth</h3>
