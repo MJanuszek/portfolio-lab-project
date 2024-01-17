@@ -1,12 +1,63 @@
+@import "fonts";
+@import "colors";
+
 .steps-info {
-  background-color: #a0def7;
+  background-color: $background-white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  font-family: $font-open-sans;
 }
 .steps {
+  margin-top: 3vh;
+  background-color: $color1;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
+  margin: 0.5vh 2vw;
+}
+.step-title {
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+}
+
+.donate-link {
+  padding: 20px 90px;
+  border: 1px solid black;
+  background-color: white;
+  font-size: 36px;
+}
+
+// steps icons:::
+.step-icon-1 {
+  background-image: url("../assets/Icon-1.svg");
+}
+.step-icon-2 {
+  background-image: url("../assets/Icon-2.svg");
+}
+.step-icon-3 {
+  background-image: url("../assets/Icon-3.svg");
+}
+.step-icon-4 {
+  background-image: url("../assets/Icon-4.svg");
+}
+
+.step-icon-1,
+.step-icon-2,
+.step-icon-3,
+.step-icon-4 {
+  height: 83px;
+  width: 83px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
