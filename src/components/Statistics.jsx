@@ -1,13 +1,17 @@
 import React from "react";
-import "../styles/Intro.scss";
+import "../styles/Statistics.scss";
 
-function Intro() {
+const numberOfDonations = 5;
+const numberOfOrganizations = 3;
+const numberOfCollections = 10;
+
+function Statistics() {
   return (
     <>
       <div className="statistics" id="statistics">
         <div className="statistic-element">
-          <h1>5</h1>
-          <h3>title sth</h3>
+          <h1>{numberOfDonations}</h1>
+          <h3>ODDANYCH WORKÓW</h3>
           <p className="stats-description">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id porro
             esse fugit consectetur quisquam! Quas non sed aut error cum
@@ -15,8 +19,8 @@ function Intro() {
           </p>
         </div>
         <div className="statistic-element">
-          <h1>6</h1>
-          <h3>title sth</h3>
+          <h1>{numberOfOrganizations}</h1>
+          <h3>WSPARTYCH ORGANIZACJI</h3>
           <p className="stats-description">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id porro
             esse fugit consectetur quisquam! Quas non sed aut error cum
@@ -24,8 +28,8 @@ function Intro() {
           </p>
         </div>
         <div className="statistic-element">
-          <h1>7</h1>
-          <h3>title sth</h3>
+          <h1>{numberOfCollections}</h1>
+          <h3>ZORGANIZOWANYCH ZBIÓREK</h3>
           <p className="stats-description">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id porro
             esse fugit consectetur quisquam! Quas non sed aut error cum
@@ -37,4 +41,4 @@ function Intro() {
   );
 }
 
-export default Intro;
+export default Statistics;

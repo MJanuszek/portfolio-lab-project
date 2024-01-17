@@ -1,6 +1,6 @@
 import React from "react";
 import HomeHeader from "./HomeHeader";
-import Intro from "./Intro";
+import Statistics from "./Statistics";
 import StepsInfo from "./StepsInfo";
 import About from "./About";
 import Organizations from "./Organizations";
@@ -10,7 +10,7 @@ function Home() {
   return (
     <div>
       <HomeHeader />
-      <Intro />
+      <Statistics />
       <StepsInfo />
       <About />
       <Organizations />

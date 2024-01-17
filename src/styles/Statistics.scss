@@ -1,0 +1,21 @@
+@import "fonts";
+@import "colors";
+
+.statistics {
+  background-color: $color3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // background-image: url("../assets//");
+}
+.statistic-element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  font-family: $font-merriweather;
+  line-height: 2.2;
+  font-size: 16px;
+  text-align: center;
+}
