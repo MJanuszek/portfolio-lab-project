@@ -1,11 +1,46 @@
-.about {
-  background-color: #bbcff9;
-}
+@import "fonts";
+@import "colors";
 
 .about-section {
+  background-color: $color1;
   display: flex;
 }
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .about-img {
-  border: 1px solid black;
-  padding: 200px;
+  background-image: url("../assets/People.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  width: 50vw;
+}
+.signature {
+  display: flex;
+  align-self: flex-end;
+  margin-right: 50px;
+  background-image: url("../assets/Signature.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 200px;
+}
+.decoration-about {
+  background-image: url("../assets/Decoration.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 353px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.about-description {
+  padding: 30px;
 }

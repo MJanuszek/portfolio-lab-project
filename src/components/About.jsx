@@ -6,14 +6,15 @@ function About() {
       <div className="about-section" id="about-section">
         <div className="about">
           <h2>O nas</h2>
-          <div className="decoration">----dekoracja tu----</div>
+          <div className="decoration-about"></div>
           <p className="about-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-            voluptate officiis neque.
+            voluptate officiis neque. Amet consectetur adipisicing elit.
+            Inventore voluptate officiis neque
           </p>
-          <div className="signature">---tu img podpisu---</div>
+          <div className="signature"></div>
         </div>
-        <div className="about-img">---obrazek about---</div>
+        <div className="about-img"></div>
       </div>
     </>
   );
