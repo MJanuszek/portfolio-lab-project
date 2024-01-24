@@ -31,7 +31,7 @@ function ContactForm() {
       setValidationErrors({ ...validationErrors, email: "Niewłaściwy email" });
       return false;
     }
-    const isMessageValid = formInfo.message.length >= 112;
+    const isMessageValid = formInfo.message.length >= 2;
     if (!isMessageValid) {
       // alert("Wiadomość musi mieć conajmniej 120 znaków.");
       setValidationErrors({
@@ -88,6 +88,9 @@ function ContactForm() {
                       ...prevInfo,
                       name: event.target.value,
                     }));
+                    if (validationErrors.name) {
+                      setValidationErrors({ ...validationErrors, name: "" });
+                    }
                   }}
                 />
                 {validationErrors.name && (
@@ -139,6 +142,11 @@ function ContactForm() {
               Wyślij
             </button>
           </form>
+        </div>
+        <div className="footer">
+          <p>Copyright by Coders Lab</p>
+          <div className="fb-icon"></div>
+          <div className="ig-icon"></div>
         </div>
       </div>
     </>
