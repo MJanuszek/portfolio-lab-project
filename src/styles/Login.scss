@@ -1,0 +1,36 @@
+@import "fonts";
+@import "colors";
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-user {
+  margin-top: 10vh;
+  min-width: 25vw;
+  background-color: $color1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.input-login {
+  background-color: $color1;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.login-or-register {
+  display: flex;
+  align-items: center;
+  margin-top: 4vh;
+}
+
+.link-btn:hover {
+  border: 1px solid black;
+  margin-left: 2vw;
+}

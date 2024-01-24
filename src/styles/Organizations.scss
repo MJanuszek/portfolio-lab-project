@@ -1,4 +1,16 @@
 .organizations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #fff;
   height: 90vh;
+}
+
+.org-decoration {
+  display: flex;
+  background-image: url("../assets/Decoration.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 353px;
+  padding: 20px;
 }
