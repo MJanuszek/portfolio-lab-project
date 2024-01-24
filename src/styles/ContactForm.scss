@@ -9,16 +9,41 @@
   height: 90vh;
 }
 
-// .contact-form::before {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   background: rgba(255, 255, 255, 0.5);
-//   z-index: 1;
+.contact-form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+}
+.form-contant-info,
+.form-title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+
+.form-group,
+.form-title,
+.submit-btn,
+.decoration {
+  position: relative;
+  z-index: 4;
+}
+// .form-contant {
+//   display: flex;
+//   flex-direction: column;
 // }
+.form-group {
+  padding: 10px;
+}
+.form-group input {
+  border: none;
+  border-bottom: 1px solid black;
+}
 
 .contact-info {
   display: flex;
@@ -26,4 +51,18 @@
   align-items: flex-end;
   margin-right: 15vw;
   justify-content: center;
+}
+.form-message {
+  min-height: 150px;
+  min-width: 400px;
+  margin-top: 10px;
+}
+.submit-btn {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+.error-message {
+  color: red;
 }
