@@ -5,6 +5,7 @@
   background-color: $background-white;
   height: 100vh;
   display: flex;
+  margin-bottom: 6vh;
 
   .header-img {
     flex: 0 0 50%;
@@ -14,10 +15,12 @@
     background-repeat: no-repeat;
   }
 }
+
 .login {
   display: flex;
   justify-content: end;
 }
+
 .link-btn:hover {
   border: 2px solid $color3;
 }
@@ -30,7 +33,7 @@
 }
 
 .bottom-link {
-  font-size: 36px;
+  font-size: 26px;
   border: 1px solid black;
   padding: 13px 51px;
   margin-left: 10px;
@@ -42,8 +45,12 @@
   display: flex;
 }
 
-.header-title-1 {
+.header-title-1,
+.header-title-2 {
+  font-size: 32px;
   font-family: $font-open-sans;
+  font-weight: 100;
+  padding: 10px;
 }
 
 .hedear-info {
