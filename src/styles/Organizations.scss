@@ -1,3 +1,6 @@
+@import "fonts";
+@import "colors";
+
 .organizations {
   display: flex;
   flex-direction: column;
@@ -12,5 +15,29 @@
   background-repeat: no-repeat;
   background-size: contain;
   min-width: 353px;
+  padding: 20px;
+}
+.list-description {
+  max-width: 40vw;
+  font-family: $font-merriweather;
+  font-size: 16px;
+  align-content: center;
+}
+
+.list-element {
+  border: none;
+  border-bottom: 1px solid black;
+  max-width: 80vw;
+  font-size: 18px;
+  font-family: $font-merriweather;
+}
+
+.display-btn {
+  padding: 10px;
+  margin: 2px;
+  background-color: #fff;
+  font-size: 16px;
+}
+.buttons {
   padding: 20px;
 }
