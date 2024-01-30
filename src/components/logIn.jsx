@@ -12,12 +12,10 @@ function LogIn() {
         <div className="decoration"></div>
         <form action="" className="login-user">
           <label htmlFor="email">
-            {" "}
             Email <br />
             <input className="input-login" type="text" id="email" />
           </label>
           <label htmlFor="password">
-            {" "}
             Password <br />
             <input className="input-login" type="text" id="password" />
           </label>

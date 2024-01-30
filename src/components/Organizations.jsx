@@ -1,19 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { database, auth } from "../config/firebase";
 import ListElement from "./ListElement";
 import "../styles/Organizations.scss";
-import {
-  getDocs,
-  collection,
-  onSnapshot,
-  deleteDoc,
-  doc,
-} from "firebase/firestore";
+import { getDocs, collection } from "firebase/firestore";
 
 function Organizations() {
   const [displayCollection, setDisplayCollection] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(3);
+  const itemsPerPage = 3;
   // collection: method that gives references to the collection from firebase
   const fundationsListRef = collection(database, "fundations-list");
   const organizationsListRef = collection(database, "organizations-list");
@@ -28,6 +22,9 @@ function Organizations() {
     setDisplayCollection(items);
     setCurrentPage(1);
   };
+  useEffect(() => {
+    fetchCollectionData(organizationsListRef); // fetch data when component mounts
+  }, []);
 
   // change view of org list:::
   const handleDisplayList = (id) => {
@@ -42,7 +39,6 @@ function Organizations() {
     }
   };
 
-  // Oblicz indeksy elementów dla bieżącej strony
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = displayCollection.slice(
@@ -50,7 +46,6 @@ function Organizations() {
     indexOfLastItem
   );
 
-  // Zmień stronę
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
   return (
     <>
@@ -113,7 +108,11 @@ function Organizations() {
         {Array.from(
           { length: Math.ceil(displayCollection.length / itemsPerPage) },
           (_, index) => (
-            <button key={index} onClick={() => paginate(index + 1)}>
+            <button
+              className="paginate-btn"
+              key={index}
+              onClick={() => paginate(index + 1)}
+            >
               {index + 1}
             </button>
           )

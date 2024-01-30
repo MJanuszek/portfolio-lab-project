@@ -13,6 +13,8 @@ function ContactForm() {
     message: "",
   });
 
+  const [isSend, setIsSend] = useState(false);
+
   //name - Imię powinno być jednym wyrazem
   //email - Email powinien być poprawny
   //message - Wiadomość musi mieć conajmniej 120 znaków
@@ -56,11 +58,17 @@ function ContactForm() {
       })
         .then((response) => response.json())
         .then((data) => {
-          console.log("sks", "Success:", data);
+          console.log("here:::", "Success:", data);
         })
         .catch((error) => {
           console.error("Error:", error);
         });
+      // to display info about form submit:::
+      setIsSend(true);
+      // info will disappear after 6s::::
+      setTimeout(() => {
+        setIsSend(false);
+      }, 6000);
     }
   }
   return (
@@ -69,6 +77,13 @@ function ContactForm() {
         <div className="contact-info">
           <h1 className="form-title">Skontaktuj się z nami</h1>
           <div className="decoration"></div>
+          <div className="infoAboutSend">
+            {isSend ? (
+              <p style={{ color: "green", fontSize: "28px" }}>
+                Wiadomość została wysłana
+              </p>
+            ) : null}
+          </div>
           <form
             action="/submitForm"
             method="post"

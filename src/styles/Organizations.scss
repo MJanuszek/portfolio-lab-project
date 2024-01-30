@@ -2,11 +2,12 @@
 @import "colors";
 
 .organizations {
+  // border: 2px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #fff;
-  height: 90vh;
+  height: 40vh;
 }
 
 .org-decoration {
@@ -40,4 +41,11 @@
 }
 .buttons {
   padding: 20px;
+}
+.paginate-btn {
+  padding: 10px;
+  background-color: #fff;
+  font-size: 14px;
+  align-content: center;
+  margin: 20px;
 }
