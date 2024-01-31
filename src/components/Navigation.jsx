@@ -1,15 +1,18 @@
 import React from "react";
 import "../styles/Navigation.scss";
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 
 function Navigation() {
   return (
     <>
       <nav className="nav">
         <ul>
-          <Link className="nav-link" to="start" smooth={true} duration={500}>
-            Start
-          </Link>
+          {/* return to main page as RouterLink */}
+          <RouterLink className="nav-link home-link" to={"/"}>
+            HOME
+          </RouterLink>
+          {/* scroll links::: */}
           <Link
             className="nav-link"
             to="statistics"

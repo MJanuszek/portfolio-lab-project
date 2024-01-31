@@ -8,11 +8,11 @@ function HomeHeader() {
     <div className="header">
       <div className="header-img"></div>
       <div className="header-content">
-        <div className="login">
-          <Link to="/login" className="link-btn">
+        <div className="login-header">
+          <Link to="/login" className="link-btn-login">
             Zaloguj
           </Link>
-          <Link to="/create-account" className="link-btn">
+          <Link to="/create-account" className="link-btn-login">
             Załóż konto
           </Link>
         </div>

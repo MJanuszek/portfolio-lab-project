@@ -16,9 +16,18 @@
   }
 }
 
-.login {
+.login-header {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
+  align-items: center;
+}
+.link-btn-login {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  &:hover {
+    border: 2px solid $color3;
+  }
 }
 
 .link-btn:hover {

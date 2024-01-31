@@ -31,6 +31,7 @@
   max-width: 80vw;
   font-size: 18px;
   font-family: $font-merriweather;
+  margin-top: 4vh;
 }
 
 .display-btn {
@@ -38,6 +39,9 @@
   margin: 2px;
   background-color: #fff;
   font-size: 16px;
+  &:hover {
+    border: 2px solid $color3;
+  }
 }
 .buttons {
   padding: 20px;
@@ -48,4 +52,7 @@
   font-size: 14px;
   align-content: center;
   margin: 20px;
+}
+.list-container {
+  min-height: 50vh;
 }

@@ -14,8 +14,8 @@ function Organizations() {
   const fundraisingListRef = collection(database, "fundraising-list");
 
   const fetchCollectionData = async (collectionRef) => {
-    const querySnapshot = await getDocs(collectionRef);
-    const items = querySnapshot.docs.map((doc) => ({
+    const createCollectionFromFirebase = await getDocs(collectionRef);
+    const items = createCollectionFromFirebase.docs.map((doc) => ({
       id: doc.id,
       ...doc.data(),
     }));
@@ -92,7 +92,7 @@ function Organizations() {
         </p>
         {/* -------------------- */}
       </div>
-      <ul>
+      <ul className="list-container">
         {currentItems.map((element, index) => {
           return (
             <ListElement
